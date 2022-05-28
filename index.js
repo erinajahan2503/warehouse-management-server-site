@@ -34,11 +34,12 @@ async function run() {
             const query = { _id: ObjectId(id) };
             const item = await userscollection.findOne(query);
             res.send(item);
+
         });
     }
     finally {
 
-        // await client.close();
+        await client.close();
     }
 }
 
