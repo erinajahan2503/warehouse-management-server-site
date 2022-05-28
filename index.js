@@ -46,9 +46,9 @@ run().catch(console.dir);
 
 
 
-app.get('/', (req, res) => {
-    res.send('run my car haunter wait until')
-});
+// app.get('/', (req, res) => {
+//     res.send('run my car haunter wait until')
+// });
 app.listen(port, () => {
     console.log('car haunter is running again and again');
 })
